@@ -1,0 +1,57 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node / Monorepo
+node_modules/
+.pnpm-store/
+.pnp.cjs
+.pnp.loader.mjs
+
+# Lockfiles (keep pnpm lock if present)
+package-lock.json
+yarn.lock
+# pnpm-lock.yaml is allowed
+
+# Build outputs
+/dist/
+/build/
+/out/
+.tmp/
+.temp/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage
+coverage/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.iml
+
+# TurboRepo cache
+.turbo/
+
+# Cloudflare/Wrangler (example app)
+examples/cloudflare-worker/.wrangler/
+examples/cloudflare-worker/.dev.vars
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Misc
+*.local

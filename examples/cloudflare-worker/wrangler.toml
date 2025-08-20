@@ -1,0 +1,14 @@
+name = "edge-rag"
+main = "src/index.ts"
+compatibility_date = "2025-07-01"
+
+[ai]
+binding = "AI"
+
+[[vectorize]]
+binding    = "VEC"
+index_name = "edge-rag"
+
+[[rules]]
+globs = ["**/*.wasm"]
+type  = "CompiledWasm"

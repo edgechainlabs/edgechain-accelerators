@@ -1,0 +1,22 @@
+{
+  "name": "example-cloudflare-worker",
+  "private": true,
+  "version": "0.1.5",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@edgechain/accelerators-core": "workspace:*",
+    "@edgechain/accelerators-adapters": "workspace:*",
+    "@edgechain/accelerators-langchain": "workspace:*",
+    "@langchain/core": "^0.2.0",
+    "@langchain/cloudflare": "^0.1.0",
+    "tiktoken": "^1.0.22"
+  },
+  "devDependencies": {
+    "wrangler": "^3.60.0",
+    "typescript": "^5.9.2"
+  }
+}

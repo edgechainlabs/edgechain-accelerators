@@ -1,0 +1,33 @@
+{
+  "name": "@edgechain/accelerators-core",
+  "version": "0.1.5",
+  "description": "Core ports and runtime/policy utilities for WASM-accelerated LangChain.js on the edge.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./ports/*": "./dist/ports/*.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "clean": "rimraf dist || true",
+    "lint": "echo 'no lint config yet'",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vitest": "^1.6.1",
+    "rimraf": "^5.0.10"
+  }
+}
