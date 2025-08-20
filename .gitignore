@@ -14,12 +14,18 @@ package-lock.json
 yarn.lock
 # pnpm-lock.yaml is allowed
 
-# Build outputs
+# Build outputs (root and nested)
 /dist/
+dist/
 /build/
+build/
 /out/
+out/
+.tmp/
 .tmp/
 .temp/
+.temp/
+.cache/
 .cache/
 
 # TypeScript
