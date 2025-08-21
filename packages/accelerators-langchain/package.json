@@ -26,7 +26,7 @@
     "test": "vitest run"
   },
   "peerDependencies": {
-    "@edgechain/accelerators-core": "0.1.x",
+    "@edgechain/accelerators-core": "workspace:*",
     "@langchain/core": ">=0.2.0"
   },
   "devDependencies": {

@@ -29,7 +29,7 @@
     "tiktoken": "^1.0.21"
   },
   "peerDependencies": {
-    "@edgechain/accelerators-core": "0.1.x"
+    "@edgechain/accelerators-core": "workspace:*"
   },
   "devDependencies": {
     "@edgechain/accelerators-core": "workspace:*",
