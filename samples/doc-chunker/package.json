@@ -1,0 +1,17 @@
+{
+  "name": "@edgechain/sample-doc-chunker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "compare": "node src/cli.mjs --compare"
+  },
+  "dependencies": {
+    "@edgechain/accelerators-core": "workspace:*",
+    "@edgechain/accelerators-adapters": "workspace:*",
+    "@edgechain/accelerators-langchain": "workspace:*",
+    "tiktoken": "^1.0.21"
+  }
+}
+

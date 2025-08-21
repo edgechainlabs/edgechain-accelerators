@@ -1,0 +1,11 @@
+EdgeChain accelerators bring WASM-accelerated utilities to edge runtimes like Cloudflare Workers and Vercel Edge Functions. By switching between JS and WASM tokenizers automatically, developers get great defaults locally and optimal performance in production.
+
+Token-based splitting is critical for Retrieval-Augmented Generation (RAG). Splitting by characters alone can lead to uneven chunks and poor control over context windows. With a tokenizer-driven splitter, you can cap chunk sizes by tokens and configure overlap to preserve continuity.
+
+This sample demonstrates:
+- Counting tokens with tiktoken (JS in Node, WASM in edge)
+- Splitting text into token-aware chunks
+- Integrating with LangChain Runnables for easy composition
+
+You can point this CLI at longer files to see how chunk counts evolve. For real apps, feed these chunks into vector stores for embeddings, or as context windows for LLM prompts.
+
